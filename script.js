@@ -113,5 +113,3 @@ accordionButtons.forEach((button) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-
-  // Loading
