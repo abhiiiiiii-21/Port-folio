@@ -18,11 +18,80 @@ a {
 body {
     background-color: black;
     overflow-x: hidden;
+
 }
 
-/* Loading */
+/* Loading Animation */
 
+html.loading,
+body.loading {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+html.loading::-webkit-scrollbar,
+body.loading::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+html.loading,
+body.loading {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.loader {
+  bottom: 0;
+  color: #fff;
+  font-size: 3.5em;
+  height: 100vh;
+  left: 0;
+  line-height: 100vh;
+  margin: 0;
+  right: 0;
+  position: fixed;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.5);
+  top: 0;
+  z-index: 9999;
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 10px;
+}
+
+.loader span {
+  display: inline-block;
+  transform: translateX(100%) scale(0.9);
+  transition: transform 500ms;
+}
+
+.loader .finished {
+  color: #fff;
+  transform: translateX(0) scale(1);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-color: #000;
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
+}
 
 /* navbar*/
     
@@ -916,6 +985,7 @@ margin-top: 30px;
 }
 
 /* social Media */
+
 .contactMe {
   margin-top: 70px;
   display: flex;
