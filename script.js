@@ -1,4 +1,5 @@
 // glow on hover
+
 let cards = document.querySelectorAll(".toolCard");
 
 cards.forEach(card => {
@@ -28,6 +29,8 @@ cards.forEach(card => {
 
 
 //project video
+
+
 const workContainers = document.querySelectorAll('.work1');
 
 workContainers.forEach(container => {
@@ -93,7 +96,10 @@ accordionButtons.forEach((button) => {
   });
 });
 
+
 // back to top button in smooth scroll
+
+
   const workSection = document.querySelector('.stacks');
   const backToTopBtn = document.querySelector('.backToTopBtn');
 
@@ -113,12 +119,15 @@ accordionButtons.forEach((button) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
+
 // Custom cursor
+
+
 const $bigBall = document.querySelector('.cursor__ball--big');
 const $smallBall = document.querySelector('.cursor__ball--small');
 const $hoverables = document.querySelectorAll('a, button, .btn, [onclick], input, label');
 
-// Track cursor position
+
 let cursorX = 0;
 let cursorY = 0;
 
