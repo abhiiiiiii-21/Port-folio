@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Abhishek</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+</head>
+
+<body>
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+          <svg height="30" width="30">
+            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+          </svg>
+        </div>
+        
+        <div class="cursor__ball cursor__ball--small">
+          <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+          </svg>
+        </div>
+    </div>
+
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="./assets/background.mp4" type="video/mp4" />
+        </video>
+
+        <div class="overlay"></div>
+
+        <header class=".header">
+            <nav class="navbar">
+                <div class="logo">
+                    <div>
+                        <i class="fa-brands fa-atlassian fa-flip"></i>
+                    </div>
+                    <div id="logoText">bhishek</div>
+                </div>
+
+                <div class="container" style="margin-right: 4.55vw ; display: flex;">
+                    <div class="soundButton" onclick="toggleAudio()">
+                        <label>
+                            <input class="play-btn" type="checkbox">
+                            <div class="play-icon"></div>
+                            <div class="pause-icon"></div>
+                        </label>
+                    </div>
+
+                    <button class="btn btn1" id="btn1">
+                        <a href="https://www.linkedin.com/in/abhiiiiii21" target="_blank">LET'S CONNECT</a>
+                    </button>
+                </div>
+                <audio id="backAudio">
+                    <source src="./assets/backAudio.ogg" type="audio/ogg">
+                </audio>
+            </nav>
+        </header>
+
+        <div class="cont">
+            <section class="home">
+                <span>Designing Tomorrow's</span>
+                <span>Web with</span>
+                <span>Today's Vision</span>
+                <span class="subHead">Building Skills in Web Development and Cinematography</span>
+            </section>
+
+            <section class="projects">
+                <div class="slider-container">
+                    <!-- First slider - Normal direction -->
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="./assets/netflix1.png" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/netflix2.png" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/netflix3.png" alt="Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/netflix4.png" alt="Image 4">
+                        </div>
+                        <!-- Duplicate slides for infinite effect -->
+                        <div class="slide">
+                            <img src="./assets/netflix1.png" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/netflix2.png" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/netflix3.png" alt="Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/netflix4.png" alt="Image 4">
+                        </div>
+                    </div>
+
+                    <!-- Second slider - Reverse direction -->
+                    <div class="slider reverse">
+                        <div class="slide">
+                            <img src="./assets/figma1.png" alt="Image 5">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/figma2.jpg" alt="Image 6">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/figma3.jpg" alt="Image 7">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/figma4.jpg" alt="Image 8">
+                        </div>
+                        <!-- Duplicate slides for infinite effect -->
+                        <div class="slide">
+                            <img src="./assets/figma1.png" alt="Image 5">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/figma2.jpg" alt="Image 6">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/figma3.jpg" alt="Image 7">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/figma4.jpg" alt="Image 8">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="./assets/background.mp4" type="video/mp4" />
+        </video>
+
+        <div class="overlay"></div>
+
+        <section>
+            <div class="stacks">
+                <div class="toolCard" style="--clr: rgb(239 71 111/var(--tw-text-opacity,1));">
+                    <div class="cardBody">
+                        <svg id="Code" width="90" height="90" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+                            <path d="M32 36L44 24L32 12M16 12L4 24L16 36" stroke="white" stroke-width="4"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-dasharray="0,0,0,67.88224792480469">
+                                <animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite"
+                                    dur="2.5s" values="0,0,0,67.88224792480469; 
+                                        0,33.941123962402344,33.941123962402344,0; 
+                                        67.88224792480469,0,0,0" keyTimes="0; 0.5; 1" fill="freeze">
+                                </animate>
+                            </path>
+                        </svg>
+
+                        <div>Web Dev</div>
+
+                        <div id="techStack">
+                            I specialize in building responsive and visually appealing web interfaces using HTML, CSS,
+                            and JavaScript, ensuring seamless user experiences. With Bootstrap, I enhance designs with
+                            modern UI components and maintain mobile-friendly layouts. Additionally, my proficiency in
+                            Python is focused on Data Structures and Algorithms (DSA) and problem-solving, enabling me
+                            to write efficient, optimized code. This combination of frontend expertise and strong
+                            logical thinking helps me create structured, high-performance web solutions.
+                        </div>
+
+                        <div class="btn-conteiner" id="red">
+                            <a class="btn-content" href="#workSection">
+                                <span class="btn-title">SEE WORK</span>
+                                <span class="icon-arrow">
+                                    <svg width="56px" height="33px" viewBox="0 0 66 43" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path id="arrow-icon-one"
+                                                d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                            <path id="arrow-icon-two"
+                                                d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                            <path id="arrow-icon-three"
+                                                d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toolCard" style="--clr: rgb(35 196 92/var(--tw-text-opacity,1))">
+                    <div class="cardBody">
+                        <img src="./assets/Rotate Anti.svg" height="80" alt="">
+
+                        <div>Davinci Resolve</div>
+
+                        <div id="techStack">
+                            I have a growing passion for cinematography and video editing, where I explore storytelling
+                            through visuals. I enjoy capturing moments, experimenting with different shots, and refining
+                            footage to create engaging content. Through editing, I enhance visuals, ensure smooth
+                            transitions, and add creative elements to bring ideas to life. This combination of shooting
+                            and editing skills allows me to craft compelling videos that leave a lasting impact. As I
+                            continue to learn and improve, I strive to make each project more dynamic and visually
+                            appealing.
+
+                        </div>
+
+                        <div class="btn-conteiner" id="green">
+                            <a class="btn-content" href="https://www.instagram.com/flamez.21/ " target=_blank>
+                                <span class="btn-title">SEE WORK</span>
+                                <span class="icon-arrow">
+                                    <svg width="56px" height="33px" viewBox="0 0 66 43" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path id="arrow-icon-one"
+                                                d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                            <path id="arrow-icon-two"
+                                                d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                            <path id="arrow-icon-three"
+                                                d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toolCard" style="--clr: rgb(16, 159, 231)">
+                    <div class="cardBody">
+                        <svg id="Figma" width="90" height="90" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+                            <path
+                                d="M24 4H17C15.1435 4 13.363 4.7375 12.0503 6.05025C10.7375 7.36301 10 9.14348 10 11C10 12.8565 10.7375 14.637 12.0503 15.9497C13.363 17.2625 15.1435 18 17 18M24 4V18M24 4H31C31.9193 4 32.8295 4.18106 33.6788 4.53284C34.5281 4.88463 35.2997 5.40024 35.9497 6.05025C36.5998 6.70026 37.1154 7.47194 37.4672 8.32122C37.8189 9.17049 38 10.0807 38 11C38 11.9193 37.8189 12.8295 37.4672 13.6788C37.1154 14.5281 36.5998 15.2997 35.9497 15.9497C35.2997 16.5998 34.5281 17.1154 33.6788 17.4672C32.8295 17.8189 31.9193 18 31 18M24 18H17M24 18H31M24 18V32M17 18C15.1435 18 13.363 18.7375 12.0503 20.0503C10.7375 21.363 10 23.1435 10 25C10 26.8565 10.7375 28.637 12.0503 29.9497C13.363 31.2625 15.1435 32 17 32M31 18C30.0807 18 29.1705 18.1811 28.3212 18.5328C27.4719 18.8846 26.7003 19.4002 26.0503 20.0503C25.4002 20.7003 24.8846 21.4719 24.5328 22.3212C24.1811 23.1705 24 24.0807 24 25C24 25.9193 24.1811 26.8295 24.5328 27.6788C24.8846 28.5281 25.4002 29.2997 26.0503 29.9497C26.7003 30.5998 27.4719 31.1154 28.3212 31.4672C29.1705 31.8189 30.0807 32 31 32C31.9193 32 32.8295 31.8189 33.6788 31.4672C34.5281 31.1154 35.2997 30.5998 35.9497 29.9497C36.5998 29.2997 37.1154 28.5281 37.4672 27.6788C37.8189 26.8295 38 25.9193 38 25C38 24.0807 37.8189 23.1705 37.4672 22.3212C37.1154 21.4719 36.5998 20.7003 35.9497 20.0503C35.2997 19.4002 34.5281 18.8846 33.6788 18.5328C32.8295 18.1811 31.9193 18 31 18ZM17 32C15.1435 32 13.363 32.7375 12.0503 34.0503C10.7375 35.363 10 37.1435 10 39C10 40.8565 10.7375 42.637 12.0503 43.9497C13.363 45.2625 15.1435 46 17 46C18.8565 46 20.637 45.2625 21.9497 43.9497C23.2625 42.637 24 40.8565 24 39V32M17 32H24"
+                                stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-dasharray="0,0,0,212.9427032470703">
+                                <animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite"
+                                    dur="2.272727272727273s"
+                                    values="0,0,0,212.9427032470703; 0,106.47135162353516,106.47135162353516,0; 212.9427032470703,0,0,0"
+                                    keyTimes="0; 0.5; 1" fill="freeze"></animate>
+                            </path>
+                        </svg>
+
+                        <div>UI/Figma Design</div>
+
+                        <div id="techStack">
+                            After joining college, I developed an interest in UI design using Figma, where I focus on
+                            creating clean, user-friendly, and visually appealing interfaces. Designing intuitive
+                            layouts and improving user experience has become an essential part of my skill set.
+                            Additionally, I have participated in inter-college hackathons, collaborating with teams to
+                            solve real-world problems through innovative solutions. These experiences have strengthened
+                            my problem-solving skills, teamwork, and ability to build functional and impactful designs
+                            under time constraints.
+                        </div>
+
+                        <div class="btn-conteiner" id="blue">
+                            <a class="btn-content" href="https://www.figma.com/@4d7562ec_a475_4" target="_blank">
+                                <span class="btn-title">SEE WORK</span>
+                                <span class="icon-arrow">
+                                    <svg width="56px" height="33px" viewBox="0 0 66 43" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path id="arrow-icon-one"
+                                                d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                            <path id="arrow-icon-two"
+                                                d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                            <path id="arrow-icon-three"
+                                                d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                                                fill="#FFFFFF"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <section class="work" id="workSection">
+        <div class="work content">
+            <div class="heading">Featured Projects</div>
+
+            <div class="separation"></div>
+
+            <div class="work1" id="workSec1">
+                <div>
+
+                    <video muted class="hoverVideo" src="./assets/netflix recording.mov" muted preload="metadata"
+                        loop></video>
+                </div>
+
+                <div class="subject">
+                    <div class="work1 subheading1">Netflix Clone</div>
+
+                    <div class="work1 content1">
+                        I created a Netflix landing page clone using HTML and CSS to
+                        sharpen my web development skills, focusing on layout and styling.
+                        I chose Netflix because it has a clean, engaging design with a
+                        strong visual appeal, which made it a perfect challenge for
+                        learning UI elements. Recreating its iconic look helped me
+                        understand CSS techniques for positioning, color schemes, and
+                        typography, giving me insight into building visually striking,
+                        user-friendly interfaces.
+                    </div>
+
+                    <div class="work1 websitLink1">
+                        <a href="https://netflix-alpha-murex.vercel.app/" target="_blank">VISIT WEBSITE
+                            <i style="padding-left: 7px; padding-top: 6px"
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+
+                    <div class="toolsUsed">
+                        <i class="fa-brands fa-html5 fa-flip"></i>
+                        <i class="fa-brands fa-css3-alt fa-flip"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separation"></div>
+
+            <div class="work1">
+                <div>
+                    <video muted class="hoverVideo" src="./assets/amazon recording.mov" muted loop></video>
+
+                </div>
+
+                <div class="subject">
+                    <div class="work1 subheading1">Amazon Clone</div>
+
+                    <div class="work1 content1">
+                        I developed an Amazon homepage clone using HTML and CSS to deepen
+                        my understanding of layout structuring and styling. Recreating
+                        Amazon's design taught me a lot about using grids, positioning
+                        elements, and organizing content for a visually appealing and
+                        functional layout. I focused on replicating key features, such as
+                        the navigation bar, product sections, and footer, which helped me
+                        improve my skills in arranging elements cohesively. This project
+                        was a great exercise in building complex interfaces and refining
+                        my CSS skills.
+                    </div>
+
+                    <div class="work1 websitLink1">
+                        <a href="https://abhiiiiiii21.github.io/Netflix-Clone/" target="_blank">
+                            VISIT WEBSITE
+                            <i style="padding-left: 7px; padding-top: 6px"
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="toolsUsed">
+                        <i class="fa-brands fa-html5 fa-flip"></i>
+                        <i class="fa-brands fa-css3-alt fa-flip"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separation"></div>
+
+            <div class="work1">
+                <div>
+                    <video muted class="hoverVideo" src="./assets/rock recording.mov" muted preload="metadata"
+                        loop></video>
+                </div>
+
+                <div class="subject">
+                    <div class="work1 subheading1">Rock Paper Scissors</div>
+
+                    <div class="work1 content1">
+                        A fun and interactive Rock Paper Scissors game where players can challenge the computer by
+                        selecting rock, paper, or scissors. The game instantly displays the result and keeps the
+                        experience engaging with smooth animations and an intuitive interface. It features a simple and
+                        easy-to-use design, instant result updates after each move, and a visually appealing, responsive
+                        layout that works seamlessly across devices. The dynamic animations enhance the overall
+                        experience, making the game more engaging and enjoyable. This project highlights my ability to
+                        create interactive and user-friendly web applications.
+                    </div>
+
+                    <div class="work1 websitLink1">
+                        <a href="https://rock-paper-scissors-abhishekkumapatels-projects.vercel.app/" target="_blank">
+                            VISIT WEBSITE
+                            <i style="padding-left: 7px; padding-top: 6px"
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="toolsUsed">
+                        <i class="fa-brands fa-html5 fa-flip"></i>
+                        <i class="fa-brands fa-css3-alt fa-flip"></i>
+                        <i class="fa-brands fa-js fa-flip"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separation"></div>
+
+            <div class="work1">
+                <div>
+                    <video muted class="hoverVideo" src="./assets/weather.mov" muted preload="metadata" loop></video>
+
+                </div>
+
+                <div class="subject">
+                    <div class="work1 subheading1">Weather App</div>
+
+                    <div class="work1 content1">
+                        I created my portfolio clone using HTML, CSS, and Bootstrap,
+                        aiming to showcase my skills and projects effectively. This
+                        project allowed me to experiment with Bootstrap's components, like
+                        cards and accordion which helped in organizing content smoothly. I
+                        designed sections for about me, my skills, and project highlights,
+                        giving it a clean, professional look. Building this portfolio was
+                        a valuable experience, enhancing my understanding of layout
+                        structuring and styling while creating a visually appealing
+                        representation of my work.
+                    </div>
+
+                    <div class="work1 websitLink1">
+                        <a href="https://weather-app-abhishekkumapatels-projects.vercel.app/" target="_blank">
+                            VISIT WEBSITE
+                            <i style="padding-left: 7px; padding-top: 6px"
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="toolsUsed">
+                        <i class="fa-brands fa-html5 fa-flip"></i>
+                        <i class="fa-brands fa-css3-alt fa-flip"></i>
+                        <i class="fa-brands fa-js fa-flip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="separation"></div>
+
+            <div class="work1">
+                <div>
+                    <video muted class="hoverVideo" src="./assets/calculator.mov" muted preload="metadata" loop></video>
+                </div>
+
+                <div class="subject">
+                    <div class="work1 subheading1">iPhone Calculator</div>
+
+                    <div class="work1 content1">
+                        My first hackathon experience was Smart India Hackathon (SIH),
+                        where I stepped into the world of design with Figma. This was my
+                        first time using a design tool to create a project, and I quickly
+                        learned how to transform our ideas into a visual format. We
+                        developed a prototype that represented our concept, allowing us to
+                        communicate our vision.
+                    </div>
+
+                    <div class="work1 websitLink1">
+                        <a href="https://iphonecalculator-seven.vercel.app/" target="_blank">
+                            VISIT WEBSITE
+                            <i style="padding-left: 7px; padding-top: 6px"
+                                class="fa-solid fa-square-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="toolsUsed">
+                        <i class="fa-brands fa-html5 fa-flip"></i>
+                        <i class="fa-brands fa-css3-alt fa-flip"></i>
+                        <i class="fa-brands fa-js fa-flip"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="./assets/background.mp4" type="video/mp4" />
+        </video>
+
+        <div class="overlay"></div>
+        <div class="cont">
+            <section class="hobbies">
+                <div class="heading2">Extra Curriculars</div>
+
+                <div class="cardArea">
+                    <div class="card">
+                        <img src="./assets/hobby1.png" alt="football" id="football">
+                        <div class="card__content">
+                            <p class="card__title">Football</p>
+                            <p class="card__description">Football is a hobby that brings me both excitement and
+                                fitness. I love the adrenaline rush during a game, the
+                                teamwork involved, and the strategic thinking it demands.
+                                Each match challenges me to improve my skills and push my
+                                limits, while also offering a fun, engaging way to stay
+                                healthy and active.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/hobby2.jpg" alt="football" id="football">
+                        <div class="card__content">
+                            <p class="card__title">Gaming</p>
+                            <p class="card__description">Gaming is one of my favorite extra curricular activity and I
+                                enjoy playing
+                                titles like BGMI and Valorant. These games allow me to
+                                experience intense action, strategic gameplay, and teamwork.
+                                With each match, I get a chance to improve my skills,
+                                connect with friends, and thrill of competition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardArea" 1>
+                    <div class="card">
+                        <img src="./assets/hobby3.webp" alt="football" id="football">
+                        <div class="card__content">
+                            <p class="card__title">Swimming</p>
+                            <p class="card__description">I began swimming after joining college two months ago,
+                                turning a former phobia into a new hobby. What once filled
+                                me with fear has now become a refreshing way to challenge
+                                myself. Each session builds confidence, and I'm enjoying the
+                                mix of relaxation and excitement it brings.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/hobby4.avif" alt="football" id="football">
+
+                        <div class="card__content">
+                            <p class="card__title">Cinematography</p>
+                            <p class="card__description">I've been getting into cinematography, experimenting with
+                                different camera angles, lighting, and compositions to create visually engaging shots.
+                                Whether it's shooting short videos, editing reels, or trying out different styles, it's
+                                a fun way to be creative while learning the technical side of filmmaking. It's also
+                                helped me see things from a new perspective and pay more attention to details in
+                                everyday life.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section class="upcomingProjects">
+        <div class="projectsHeading">Ongoing Projects</div>
+        <div class="separation"></div>
+
+        <div class="accordion" id="customAccordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button">
+                        TypeArena
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        An interactive, multi-mode typing platform designed to enhance users' typing speed, accuracy,
+                        and consistency. It features Normal Mode for general practice, Programmer Mode for coding-based
+                        typing, and Multiplayer Mode for real-time competitive typing. Users can track performance
+                        through analytics, leaderboards, and personalized profiles.
+                    </div>
+                </div>
+            </div>
+
+            <hr class="accordion-divider" />
+
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button">
+                        Arcade
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        A streaming platform similar to Twitch and YouTube, built to provide a seamless experience for
+                        gamers and viewers. It supports real-time streaming, interactive chat, user subscriptions, and
+                        monetization options for content creators.
+                    </div>
+                </div>
+            </div>
+
+            <hr class="accordion-divider" />
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button">
+                        Spotify Clone
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        My next project will be developing a Spotify clone using HTML, CSS, and JavaScript. This
+                        endeavor aims to replicate the sleek
+                        interface and functionality of the popular music streaming platform. By utilizing JavaScript,
+                        I'll implement features like
+                        playlists, song playback, and search functionality, enhancing my skills in front-end
+                        development. This project not only allows me
+                        to practice my coding abilities but also deepens my understanding of web applications and user
+                        experience design.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="./assets/background.mp4" type="video/mp4" />
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="cont">
+            <section class="aboutMe">
+                <div class="aboutHeading">About Me</div>
+                <div class="aboutContent">
+                    <div class="profilePic">
+                        <img src="./assets/profilePic.jpg" />
+                    </div>
+                    <div class="aboutText">
+                        <p>
+                            Hello! I'm Abhishek Kumar Patel, a B.Tech student at Rishihood University in collaboration
+                            with Newton School of Technology, and an aspiring Frontend Developer. I bring hands-on
+                            experience from multiple projects, which has helped me hone my skills in creating
+                            high-performance, scalable web applications. I am deeply passionate about crafting seamless,
+                            intuitive user interfaces that not only enhance user experience but also meet modern design
+                            standards. My journey in coding is also reflected in my competitive programming
+                            ratings—boasting a 1400+ rating on LeetCode and an 817+ rating on Codeforces—which
+                            underscore my commitment to continuous learning and problem-solving. I thrive on challenges
+                            and am dedicated to blending technical proficiency with creative innovation to develop
+                            solutions that make a tangible impact.
+                        </p>
+
+                        <p id="extraText">
+                            Beyond coding, I led the design team at <a href="https://goforgold.in/" target="_blank">Go
+                                For Gold</a>, collaborating with ICPC World Finalists
+                            to craft high-impact visuals and seamless user experiences. This role enhanced my design
+                            skills, teamwork, and ability to merge aesthetics with functionality.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="socialMedia">
+                <div class="contactMe">
+
+                    <button class="btn btn2"><a href="https://forms.gle/N2dAQp3of1icGHrc7" target="_blank">Schedule a
+                            call</a></button>
+                    <button class="btn btn2"
+                        onclick="document.location='mailto:abhishek.patel2024@nst.rishihood.edu.in';">
+                        Get in Touch
+                    </button>
+
+
+                </div>
+
+                <div class="mediaLogo">
+                    <a href="https://www.linkedin.com/in/abhiiiiii21/" target="_blank">
+                        <button class="Btn">
+                            <span class="svgContainer">
+                                <svg viewBox="0 0 448 512" height="1.6em" xmlns="http://www.w3.org/2000/svg"
+                                    class="svgIcon" fill="white">
+                                    <path
+                                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="linkedIn"></span>
+                        </button>
+                    </a>
+
+                    <a href="https://leetcode.com/u/abhiiiiiii21/" target="_blank">
+                        <button class="Btn">
+                            <span class="svgContainer">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 24 24" id="leetcode">
+                                    <path fill="#B3B1B0"
+                                        d="M22 14.355c0-.742-.564-1.346-1.26-1.346H10.676c-.696 0-1.26.604-1.26 1.346s.563 1.346 1.26 1.346H20.74c.696.001 1.26-.603 1.26-1.346z">
+                                    </path>
+                                    <path fill="#E7A41F"
+                                        d="m3.482 18.187 4.313 4.361c.973.979 2.318 1.452 3.803 1.452 1.485 0 2.83-.512 3.805-1.494l2.588-2.637c.51-.514.492-1.365-.039-1.9-.531-.535-1.375-.553-1.884-.039l-2.676 2.607c-.462.467-1.102.662-1.809.662s-1.346-.195-1.81-.662l-4.298-4.363c-.463-.467-.696-1.15-.696-1.863 0-.713.233-1.357.696-1.824l4.285-4.38c.463-.467 1.116-.645 1.822-.645s1.346.195 1.809.662l2.676 2.606c.51.515 1.354.497 1.885-.038.531-.536.549-1.387.039-1.901l-2.588-2.636a4.994 4.994 0 0 0-2.392-1.33l-.034-.007 2.447-2.503c.512-.514.494-1.366-.037-1.901-.531-.535-1.376-.552-1.887-.038l-10.018 10.1C2.509 11.458 2 12.813 2 14.311c0 1.498.509 2.896 1.482 3.876z">
+                                    </path>
+                                    <path fill="#070706"
+                                        d="M8.115 22.814a2.109 2.109 0 0 1-.474-.361c-1.327-1.333-2.66-2.66-3.984-3.997-1.989-2.008-2.302-4.937-.786-7.32a6 6 0 0 1 .839-1.004L13.333.489c.625-.626 1.498-.652 2.079-.067.56.563.527 1.455-.078 2.066-.769.776-1.539 1.55-2.309 2.325-.041.122-.14.2-.225.287-.863.876-1.75 1.729-2.601 2.618-.111.116-.262.186-.372.305-1.423 1.423-2.863 2.83-4.266 4.272-1.135 1.167-1.097 2.938.068 4.127 1.308 1.336 2.639 2.65 3.961 3.974.067.067.136.132.204.198.468.303.474 1.25.183 1.671-.321.465-.74.75-1.333.728-.199-.006-.363-.086-.529-.179z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="leetcode"></span>
+                        </button>
+                    </a>
+
+                    <a href="https://x.com/kumar_pate77204" target="_blank">
+                        <button class="Btn">
+                            <span class="svgContainer">
+                                <svg fill="white" viewBox="0 0 496 512" height="1.6em">
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="gitHub"></span>
+                        </button>
+                    </a>
+
+                    <a href="https://codeforces.com/profile/abhiiiiii.21" target="_blank">
+                        <button class="Btn">
+                            <span class="svgContainer">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1.9em" viewBox="0 0 24 24"
+                                    id="code-forces">
+                                    <path fill="#F44336"
+                                        d="M24 19.5V12a1.5 1.5 0 0 0-1.5-1.5h-3A1.5 1.5 0 0 0 18 12v7.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5z">
+                                    </path>
+                                    <path fill="#2196F3"
+                                        d="M13.5 21a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 13.5 3h-3C9.673 3 9 3.672 9 4.5v15c0 .828.673 1.5 1.5 1.5h3z">
+                                    </path>
+                                    <path fill="#FFC107"
+                                        d="M0 19.5c0 .828.673 1.5 1.5 1.5h3A1.5 1.5 0 0 0 6 19.5V9a1.5 1.5 0 0 0-1.5-1.5h-3C.673 7.5 0 8.172 0 9v10.5z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="codeForces"></span>
+                        </button>
+                    </a>
+
+                    <a href="https://www.instagram.com/flamez.21/" target="_blank">
+                        <button class="Btn">
+                            <span class="svgContainer">
+                                <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="insta"></span>
+                        </button>
+                    </a>
+
+
+                    <a href="https://x.com/kumar_pate77204" target="_blank">
+                        <button class="Btn">
+                            <span class="svgContainer">
+                                <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
+                                    class="svgIcon" fill="white">
+                                    <path
+                                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="twitter"></span>
+                        </button>
+                    </a>
+                </div>
+            </section>
+
+            <button class="backToTopBtn">
+                <svg class="iconArrow" viewBox="0 0 384 512">
+                    <path
+                        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
