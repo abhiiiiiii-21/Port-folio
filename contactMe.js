@@ -77,7 +77,7 @@ function sendEmail(e) {
     };
 
 
-    emailjs.send("service_36hodbm", "template_t08twks", params)
+    emailjs.send("service_36hodbm", "template_ail9p2cs", params)
         .then(function(response) {
             console.log("SUCCESS!", response.status, response.text);
             alert("Message sent successfully!");
