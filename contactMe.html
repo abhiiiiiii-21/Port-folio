@@ -19,11 +19,10 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+    
     <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "5jaicBXSISgZb7r2NY",
-            });
+        (function() {
+            emailjs.init("5jaicBXSISgZb7r2N");
         })();
     </script>
 </head>
@@ -55,7 +54,7 @@
             <div class="heading">Schedule a Meeting</div>
             <div class="form">
 
-                <form>
+                <form id="contact-form">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required placeholder="Enter your Name">

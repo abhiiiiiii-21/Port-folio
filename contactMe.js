@@ -67,12 +67,28 @@ function onMouseHoverOut() {
 
 // emailjs
 
-function sendEmail() {
-  let params = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    message: document.getElementById('message').value
-  }
-  emailjs.send("service_36hodbm","template_kq24nxa",params).then(alert("Scheduled meeting successfully"))
-  
+function sendEmail(e) {
+    e.preventDefault(); // Prevent form from submitting normally
+    
+    const params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+
+
+    emailjs.send("service_36hodbm", "template_t08twks", params)
+        .then(function(response) {
+            console.log("SUCCESS!", response.status, response.text);
+            alert("Message sent successfully!");
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        }, function(error) {
+            console.log("FAILED...", error);
+            alert("Failed to send message. Please try again.");
+        });
 }
+
+// Add event listener to the form
+document.querySelector('form').addEventListener('submit', sendEmail);
