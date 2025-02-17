@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+html,
+body {
+    cursor: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none !important;
+}
+
+body {
+    background-color: black;
+}
+
+/* Cursor Styles */
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+}
+
+.cursor__ball circle {
+    fill: #f7f8fa;
+}
+
+.work .cursor__ball--big circle,
+.upcomingProjects .cursor__ball--big circle {
+    fill: #000000 !important;
+}
+
+.work .cursor__ball--small circle,
+.upcomingProjects .cursor__ball--small circle {
+    fill: #ffffff !important;
+}
+
+/* Background Video */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 21, 21, 0.822);
+    opacity: 1;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    background: transparent;
+    border: 2px solid rgba(157, 157, 157, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+.heading {
+    color: #3498db;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.form {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    font-size: 20px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+#name,
+#email,
+#message {
+    background-color: transparent;
+    border: 2px solid rgba(127, 127, 127, 0.5);
+    border-radius: 13px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    width: 530px;
+}
+
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px; 
+    margin-bottom: 15px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    background: #3498db;
+    color: white;
+    padding: 0.3em 0.8em;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+
+
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(9em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}

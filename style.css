@@ -1217,12 +1217,10 @@ header nav {
   z-index: 1000;
 }
 
-/* Default cursor colors */
 .cursor__ball circle {
   fill: #f7f8fa;
 }
 
-/* Specific section cursor colors */
 .work .cursor__ball--big circle,
 .upcomingProjects .cursor__ball--big circle {
   fill: #000000 !important;
